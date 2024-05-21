@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+nav {
+  background-color: orange;
+  text-align: center;
+  padding: 1rem;
+}
+
+nav h1 {
+  color: white;
+}
+
+.to-do-input {
+  padding: 1rem 2rem;
+  background-color: antiquewhite;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.to-do-input input {
+  border: 1px solid #cecece;
+  outline: none;
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  width: 300px;
+}
+
+.error-message {
+  font-size: 12px;
+  color: red;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  color: white;
+  background-color: orange;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  box-shadow: 3px 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+  transform: scale(1.02);
+}
+
+.btn:active {
+  background-color: orange;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  transform: translateY(2px);
+}
+
+.clear-btn {
+  background-color: white;
+  border: 1px solid orange;
+  color: orange;
+}
+
+.clear-btn:hover {
+  background-color: orange;
+  color: white;
+}
+
+.to-do-list {
+  max-width: 600px;
+  margin: 1rem auto;
+}
+
+.to-do-item {
+  display: flex;
+  border-bottom: 1px solid #cecece;
+}
+
+.item-text {
+  color: #757575;
+  font-weight: 300;
+  width: 70%;
+  padding: 1rem;
+}
+
+.to-do-action {
+  width: 30%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: green;
+}
+
+.icon-btn {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.icon-btn:hover {
+  transform: scale(1.02);
+}
+
+.icon-btn:active {
+  background-color: transparent;
+  transform: translateY(2px);
+}
+
+.delete {
+  color: red;
+}
+
+.edit {
+  color: brown;
+}
+
+.done {
+  color: green;
+}
+
+@media screen and (min-width: 600px) {
+  .to-do-input {
+    flex-direction: row;
+  }
+}

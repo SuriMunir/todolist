@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>To Do App</title>
+  </head>
+  <body>
+    <nav>
+      <h1>To Do List</h1>
+    </nav>
+    <div class="to-do-input">
+      <input type="text" name="toDoItem" id="toDoItem" />
+      <p class="error-message" id="task-input-error"></p>
+      <div>
+        <button type="button" class="btn" id="add-btn">Add Task</button>
+        <button type="button" class="btn clear-btn" id="clear-btn">
+          Clear All Tasks
+        </button>
+      </div>
+    </div>
+    <div class="to-do-list"></div>
+  </body>
+  <script src="script.js"></script>
+</html>
